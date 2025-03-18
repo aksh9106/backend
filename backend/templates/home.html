@@ -1,0 +1,20 @@
+# backend/templates/home.html
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>ELD Trip Planner API</h1>
+<p>Welcome to the ELD Trip Planner API. Use the following endpoints to interact with the system:</p>
+
+<div class="api-links">
+    <a href="{% url 'trip-list' %}">View Trips</a>
+    <a href="{% url 'admin:index' %}">Admin Interface</a>
+</div>
+
+<h2>API Endpoints:</h2>
+<ul>
+    <li><code>GET /api/trips/</code> - List all trips</li>
+    <li><code>POST /api/trips/</code> - Create a new trip</li>
+    <li><code>GET /api/trips/{id}/</code> - Get trip details</li>
+    <li><code>POST /api/trips/{id}/calculate_route/</code> - Calculate route for a trip</li>
+</ul>
+{% endblock %}
