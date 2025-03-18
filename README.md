@@ -27,8 +27,8 @@ This is a full-stack application built with Django and React to plan trips and g
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/aksh9106/your-repo-name.git
-   cd your-repo-name/backend
+   git clone https://github.com/aksh9106/backend.git
+   cd backend/backend
    ```
 
 2. **Create a virtual environment:**
